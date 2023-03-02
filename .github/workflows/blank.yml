@@ -4,8 +4,9 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  workflow_dispatch:
-    
+  pull_request:
+    types: [closed]
+
   
 jobs:
   release:
